@@ -9,7 +9,7 @@ let userNumber = 0;
 let isUserExploded = false;
 do {
     do {
-        userNumber = prompt("Inserisci un numero");
+        userNumber = Number(prompt("Inserisci un numero"));
     } while (isNaN(userNumber) || userNumbers.includes(userNumber));
     if (mines.includes(userNumber)){
         alert("BOOOOOOOOOOM!");
